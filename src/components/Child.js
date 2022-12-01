@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { COUNTER_CONTEXT } from '../App'
 
-export default function Child({count , setCount}) {
-   
+export default function Child() {
+    const {count, setCount} = useContext(COUNTER_CONTEXT)
   return (
     <div style={{ background : "gray" , width : "200px" , padding : "10px" , border : "1px solid yellow" , margin : "auto"}}>
     <div>
